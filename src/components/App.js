@@ -16,7 +16,7 @@ import Aboutme from "./Aboutme";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
     <>
     <Topmenu/>
     <Switch>
