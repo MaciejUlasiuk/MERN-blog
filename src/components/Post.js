@@ -1,6 +1,5 @@
 import React from 'react';
- import img1 from './imgs/corspolicy.png'
- import img2 from './imgs/blog.png'
+ 
 const Post = (props) => {
     return ( 
         <>

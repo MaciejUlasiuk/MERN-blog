@@ -2,10 +2,12 @@ import img0 from './imgs/frontend.jpeg';
 import img1 from './imgs/corspolicy.png';
 import img2 from './imgs/blog.png'
 import img3 from './imgs/reacthooks.jpg'
+import img4 from './imgs/EE08-01.jpg'
+import img5 from './imgs/weatherapp.png'
 
 
 import Post from './Post.js';
-import Footer from './Footer';
+
 
 const Posts = () => {
     const postsData = [{title: 'Ambitny plan',
@@ -45,6 +47,21 @@ const Posts = () => {
         learningTime: '8 hours',
         date: '29:06:2021 23:51 CEST',
         img: img3,
+},
+{title: 'Nauka do egzaminu',
+        content: `Dzisiaj zbyt duzo niestety nie robilem przez to, ze jutro mam egzamin ee08 praktyke i powtarzam sobie wszystko, ale po czasie troche mi sie ta powtorka znudzila
+                    wiec poszedlem uczyc sie advanced animacji w css z kursu samuraja prorgamowania  `,
+        learningTime: '3 hours',
+        date: '30:06:2021 21:17 CEST',
+        img: img4,
+},
+{title: 'Powrot do nauki',
+        content: `Po powrocie z egzaminu o ~15 zaczalem sie dalej uczyc hookow, css a w szczegolnosci flexa. Poprawilem tez dzisiaj moja aplikacje pogodowa API zrobiona w reactie, tj.
+                    zmienilem tlo na animowany gradient, Zmienilem fonty wyswietlanych danych API, poprawilem zmiane img w headerze tak, zeby zmienialy sie tylko po zatwierdzeniu formularza, a nie jak dotychczas 
+                    po wpisywaniu znaku w inpucie, oraz poprawilem bledy wyswietlania danych z API, a jutro mam zamiar pisac cv, zrobic na szybko jakies 2 fajne apki i szukac stazu na te wakacje `,
+        learningTime: '6 hours',
+        date: '01:07:2021 22:45 CEST',
+        img: img5,
 },
 
 ]
