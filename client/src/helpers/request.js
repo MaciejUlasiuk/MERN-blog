@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const request = axios.create({
-    baseURL: 'http://localhost:5000',
+    baseURL: 'https://mern-application-blog.herokuapp.com',
     validateStatus: false,
 })
 

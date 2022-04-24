@@ -1,22 +1,55 @@
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 import "./sidebar.css";
 
 export default function Sidebar() {
+  const { user, dispatch } = useContext(Context);
+  const [state, setState] = useState(false);
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
-        <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
-          alt=""
-        />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
-        </p>
+        <span>ABOUT ME</span>
+
+        <p>Hi! My name is Maciek and i'm 19 years old developer wannabe</p>
+        <span>
+          Find more of my work on my github:{" "}
+          <a href="https://github.com/MaciejUlasiuk">
+            <i className="topIcon fab fa-github footerIcon"></i>
+          </a>{" "}
+        </span>
       </div>
       <div>
-        Contact me:
-        <input type="text" />
+        <div className="topCenterFooter">
+          <ul className="topListFooter">
+            <li className="topListItem footerItem">
+              <Link className="link" to="/">
+                HOME
+              </Link>
+            </li>
+            <li className="topListItem footerItem">
+              <Link className="link" to="/">
+                ABOUT
+              </Link>
+            </li>
+            <li className="topListItem footerItem">
+              <Link className="link" to="/contact">
+                CONTACT
+              </Link>
+            </li>
+            <li className="topListItem footerItem">
+              <Link className="link" to="/write">
+                WRITE
+              </Link>
+            </li>
+            <li className="topListItem footerItem" onClick={handleLogout}>
+              {user && "LOGOUT"}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

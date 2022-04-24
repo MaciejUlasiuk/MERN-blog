@@ -7,11 +7,7 @@ export default function Header() {
         <span className="headerTitleSm">My Programming</span>
         <span className="headerTitleLg">Blog</span>
       </div>
-      <img
-        className="headerImg"
-        src={backgroundImg}
-        alt="background-image-with-rain"
-      />
+      <img className="headerImg" src={backgroundImg} alt="rain" />
     </div>
   );
 }

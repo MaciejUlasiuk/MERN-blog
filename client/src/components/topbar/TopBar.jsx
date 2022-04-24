@@ -14,7 +14,12 @@ export default function TopBar() {
   return (
     <div className="top">
       <div className="topLeft">
-        <i className="topIcon fab fa-github"></i>
+        <Link className="link topListItemVisible" to="/">
+          Blog
+        </Link>
+        <a href="https://github.com/MaciejUlasiuk">
+          <i className="topIcon fab fa-github"></i>
+        </a>
       </div>
       <div className="topCenter">
         <ul className="topList">
